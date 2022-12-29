@@ -1,12 +1,14 @@
 {
   "name": "errors-peekaboo",
-  "displayName": "Errors PeekAboo",
+  "displayName": "Errors PeekABoo",
   "description": "View errors message of the current line by justt using the shortcut key",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
+    "Themes",
+    "Visualization",
     "Other"
   ],
   "activationEvents": [
@@ -14,12 +16,21 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
+    "keybindings": [
       {
-        "command": "errors-peekaboo.helloWorld",
-        "title": "Hello World"
+        "key": "ctrl+shift+1",
+        "mac": "cmd+shift+1",
+        "command": "errors-peekaboo.prev",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+2",
+        "mac": "cmd+shift+2",
+        "command": "errors-peekaboo.next",
+        "when": "editorTextFocus"
       }
-    ]
+    ],
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
