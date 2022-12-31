@@ -18,10 +18,12 @@ This is the extension for Visual Studio Code which allows you to peek at the err
 <img src="https://user-images.githubusercontent.com/36455825/210128121-e22a3040-734e-434c-a282-61489a7c8432.gif">
 </p>
 
-### ✨ Features
+### ✨ Features & Miscs
 
 - Peek the errors/warning/hint/information back and forth with custom easily-noticeable text presence -> Default binded key <cmd+shift+[1/2]>
 - Jump to the error and automatically have it selected
+- Colorizing the error text based on the serverity of the error
+- Having the condition that can greatly indicate if you want to stop seeing the error or not after the custom panel activated
 
 ### 🚩 Note
 
