@@ -1,8 +1,24 @@
 {
   "name": "errors-peekaboo",
   "displayName": "Errors PeekABoo",
-  "description": "View errors message of the current line by justt using the shortcut key",
-  "version": "0.0.1",
+  "description": "View errors message of by just using the shortcut key",
+  "version": "1.0.0",
+  "publisher": "Thiti-Dev",
+  "icon": "images/icon.png",
+  "author": {
+    "name": "Thiti Mahawannakit",
+    "email": "thiti.mwk.main@gmail.com",
+    "url": "https://github.com/Thiti-Dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thiti-Dev/vscode-ext-errors-peekaboo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thiti-Dev/vscode-ext-errors-peekaboo.git"
+  },
+  "homepage": "https://github.com/Thiti-Dev/vscode-ext-errors-peekaboo",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -34,6 +50,7 @@
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
+    "create:package": "npm upgrade && vsce package && rm package-lock.json && pnpm upgrade",
     "compile": "webpack",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
@@ -57,7 +74,8 @@
     "ts-loader": "^9.4.1",
     "typescript": "^4.9.3",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0"
+    "webpack-cli": "^5.0.0",
+    "vsce": "^2.15.0"
   },
   "dependencies": {
     "inversify": "^6.0.1",
